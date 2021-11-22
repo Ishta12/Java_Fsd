@@ -1,0 +1,7 @@
+package newfeatures;
+
+public class Addition {
+	
+		int calculate(int a, int b);
+	}
+}

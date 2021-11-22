@@ -1,0 +1,23 @@
+package newfeatures;
+
+public class Car implements Vehicle {
+
+	@Override
+	public String getBrand() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String speedUp() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String slowDown() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

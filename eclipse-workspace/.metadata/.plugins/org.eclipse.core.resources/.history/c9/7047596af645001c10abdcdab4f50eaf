@@ -1,0 +1,31 @@
+package newfeatures;
+
+public class Student {
+
+	//pojo class
+		Integer rollNumber;
+		String name;
+		Double marks;
+		
+	public Student(int rollNumber, String name, double marks) {
+		super();
+		this.rollNumber = rollNumber;
+		this.name = name;
+		this.marks = marks;
+	}
+	
+
+
+
+
+
+	
+	}
+	//* public Object name;
+
+	public Student(int i, String string, int j) {
+		// TODO Auto-generated constructor stub
+	}
+	
+
+}

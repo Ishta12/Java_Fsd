@@ -1,0 +1,20 @@
+package newfeatures;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MethodReferenceDemo3 {
+
+	public static void main(String[] args) {
+		Order ord1=new Order(1000,"GOOG.NS",12000.10,Order.Side.BUY);
+		Order ord2=new Order(500,"MS.TS",5000.50,Order.Side.SELL);
+		
+		List<Order> orderBook=new ArrayList<Order>();
+		
+		orderBook.add(ord1);
+		orderBook.add(ord2);
+		
+		//sort all orders based on price using Lambda
+		System.out.println("Before Sorting :" + orderBook); //invokes toString() method
+	}
+}

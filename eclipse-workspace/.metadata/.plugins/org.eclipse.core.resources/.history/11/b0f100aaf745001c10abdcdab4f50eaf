@@ -1,0 +1,28 @@
+package newfeatures;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/* Java lambda expression can be used in the collection framework. It provides efficient and concise way to iterate, filter and fetch data.
+ * 
+ */
+public class LambdaComparatorDemo {
+	
+	public static void main(String args[]) {
+		
+		Student s1=new Student(101, "Gosling", 78);
+		Student s2=new Student(102, "Rod Jhonson", 55);
+		Student s3=new Student(103, "Steve Jobs", 95);
+		Student s4=new Student(104, "Zuckerberg", 82);
+		Student s5=new Student(105, "Mike", 72);
+		
+		//add students to arrayList
+		List<Student> sList=new ArrayList<Student>();
+		sList.add(s1);
+		sList.add(s2);
+		sList.add(s3);
+		sList.add(s4);
+		sList.add(s5);
+		
+	}
+}

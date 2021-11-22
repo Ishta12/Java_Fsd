@@ -1,0 +1,28 @@
+package streamdemo;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+import java.util.stream.Collectors;
+
+public class StreamExample2 {
+	
+	public static void maine(String[] args) {
+		
+		List<String> names=Arrays.asList("Jhon","Dan","Mike","Thomson");
+		
+		
+		//create a stream
+		Stream<String> n=names.stream();
+		
+		//Intermediate Operations
+		Stream<String> ln=n.filter(str->str.length() > 3);
+		
+		ln.forEach(System.out::println);
+		
+		System.out.println("*************************");
+		List<String> names1=names.stream().filter(str->str.length() > 4).collect(Collectors.toList());
+		System.out.println(names1);
+	}
+
+}
